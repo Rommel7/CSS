@@ -1,0 +1,108 @@
+img {
+    position: absolute;
+    left: -50px;
+}
+
+li {
+    list-style: none;
+    height: 14px;
+    width: 10px;
+    border-radius: 100%;
+    background: green;
+    margin: 10px;
+    -webkit-animation: move 1s linear infinite;
+    animation-name: rain;
+}
+
+@keyframes rain {
+    0% {
+        background: green;
+        left: 200px;
+        top: 260px;
+    }
+    100% {
+        background: green;
+        left: 200px;
+        top: 400px;
+    }
+}
+
+li:nth-child(1) {
+    position: relative;
+    top: 260px;
+    left: 170px;
+    z-index: -1;
+    -webkit-animation-delay: 800ms;
+}
+
+li:nth-child(2) {
+    position: relative;
+    top: 260px;
+    left: 200px;
+    z-index: 0;
+    -webkit-animation-delay: 500ms;
+}
+
+li:nth-child(3) {
+    position: relative;
+    top: 260px;
+    left: 200px;
+    z-index: 1;
+    -webkit-animation-delay: 900ms;
+}
+
+li:nth-child(4) {
+    position: relative;
+    top: 260px;
+    left: 200px;
+    z-index: 2;
+    -webkit-animation-delay: 200ms;
+}
+
+li:nth-child(5) {
+    position: relative;
+    top: 260px;
+    left: 200px;
+    z-index: -1;
+    -webkit-animation-delay: 150ms;
+}
+
+li:nth-child(6) {
+    position: relative;
+    top: 260px;
+    left: 200px;
+    z-index: -1;
+    -webkit-animation-delay: 400ms;
+}
+
+li:nth-child(7) {
+    position: relative;
+    top: 260px;
+    left: 200px;
+    z-index: -1;
+    -webkit-animation-delay: 500ms;
+}
+
+li:nth-child(8) {
+    position: relative;
+    top: 260px;
+    left: 200px;
+    z-index: -1;
+    -webkit-animation-delay: 500ms;
+}
+
+li:nth-child(9) {
+    position: relative;
+    top: 260px;
+    left: 200px;
+    z-index: -1;
+    -webkit-animation-delay: 300ms;
+}
+
+li:nth-child(10) {
+    position: relative;
+    top: 260px;
+    left: 200px;
+    z-index: -1;
+    -webkit-animation-delay: 1s;
+}
