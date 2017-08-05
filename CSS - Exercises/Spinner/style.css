@@ -1,0 +1,50 @@
+    @keyframes spinner {
+        100% {
+            transform: rotate(3600deg);
+        }
+    }
+    
+    .container {
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: 50vh;
+        /*    margin-top: 50%;*/
+        transform: translateY(-50%);
+    }
+    
+    .spinner {
+        display: inline-block;
+        width: 400px;
+        height: 400px;
+        background-image: url(1.png);
+        background-position: center;
+        background-size: contain;
+/*        transform-origin: 50% 50%;*/
+        animation: spinner 5.6s infinite alternate ease-in-out;
+    }
+    
+    .center__spinner {
+        display: inline-block;
+        position: absolute;
+        left: 39.5%;
+        width: 400px;
+        height: 400px;
+        background-image: url(2.png);
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .text {
+        margin-top: 7%;
+        color: #333;
+        font-size: 3vw;
+        font-weight: 700;
+        font-family: monospace;
+    }
+    
+    @media screen and (max-width: 950px) {
+        .center__spinner {
+            left: 28.5%;
+        }
+    }
